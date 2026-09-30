@@ -14,9 +14,10 @@
 </head>
 <body>
 
+<!-- ===== NAV ===== -->
 <nav class="nav" id="nav">
   <a href="#top" class="nav-mark">
-    <img class="nav-logo" src="logo.png" width="40" height="40" alt="BMT" decoding="async" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/uuhjeike/BMT/main/Files/file_00000000d2d88211b941082128f72c6f.png'">
+    <img class="nav-logo" src="logo.png" width="40" height="40" alt="BMT — Business Management Technology" decoding="async" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/uuhjeike/BMT/main/Files/file_00000000d2d88211b941082128f72c6f.png'">
   </a>
   <div class="nav-links">
     <a href="#subjects">বিষয়সমূহ</a>
@@ -27,10 +28,11 @@
   </div>
 </nav>
 
+<!-- ===== HERO ===== -->
 <header class="hero" id="top">
   <div class="hero-inner">
     <div class="hero-crest">
-      <img src="logo.png" width="170" height="170" alt="BMT" decoding="async" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/uuhjeike/BMT/main/Files/file_00000000d2d88211b941082128f72c6f.png'">
+      <img src="logo.png" width="170" height="170" alt="BMT — Business Management Technology" decoding="async" onerror="this.onerror=null;this.src='https://raw.githubusercontent.com/uuhjeike/BMT/main/Files/file_00000000d2d88211b941082128f72c6f.png'">
     </div>
     <p class="hero-motto">Learn · Build · Grow</p>
     <p class="hero-eyebrow">প্রথম বর্ষ · ব্যবসায় শিক্ষা</p>
@@ -49,28 +51,32 @@
   </div>
 </header>
 
+<!-- ===== SUBJECTS ===== -->
 <main>
 <section class="section subjects" id="subjects">
   <div class="section-head">
     <h2>বিষয়সমূহ</h2>
     <p class="section-note">যেকোনো ট্যাবে ক্লিক করলে সেই বিষয়ের সব পোস্ট খুলবে</p>
   </div>
-  <div class="shelf" id="shelf"></div>
+  <div class="shelf" id="shelf"><!-- subject folder-cards injected by script.js --></div>
 </section>
 
+<!-- ===== TEACHERS ===== -->
 <section class="section teachers" id="teachers">
   <div class="section-head">
     <h2>শিক্ষকবৃন্দ</h2>
     <p class="section-note">দরকারে সরাসরি কল বা মেসেজ করো</p>
   </div>
-  <div class="teacher-grid" id="teacherGrid"></div>
+  <div class="teacher-grid" id="teacherGrid"><!-- injected --></div>
 </section>
+
 </main>
 
 <footer class="footer">
   <p>বানানো হয়েছে যত্ন করে, নিজেদের পড়াশোনার জন্য।</p>
 </footer>
 
+<!-- ===== UNSTOPPABLE — the stopwatch, at the very bottom of everything ===== -->
 <section class="unstoppable" id="unstoppable">
   <div class="unstoppable-inner">
     <span class="unstoppable-orb"></span>
@@ -85,6 +91,7 @@
   </div>
 </section>
 
+<!-- ===== SUBJECT FEED PANEL ===== -->
 <div class="feed-overlay" id="feedOverlay">
   <div class="feed-panel" id="feedPanel" role="dialog" aria-modal="true" aria-labelledby="feedTitle">
     <button class="feed-close" id="feedClose" aria-label="বন্ধ করো">
@@ -102,6 +109,7 @@
   </div>
 </div>
 
+<!-- ===== LIGHTBOX ===== -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
   <button class="lightbox-close" id="lightboxClose" aria-label="বন্ধ করো">
     <svg viewBox="0 0 24 24"><path d="M5 5 L19 19 M19 5 L5 19"/></svg>
