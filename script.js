@@ -371,7 +371,6 @@ function handleFeedScroll() {
   // Memory management: remove items far up if too many rendered
   const articles = feedPosts.querySelectorAll('article.post');
   if (articles.length > 12 && scrollTop > 1500) {
-    // Keep last 8 elements, remove top excess elements to free RAM
     for (let i = 0; i < articles.length - 8; i++) {
       const art = articles[i];
       const div = art.nextElementSibling;
@@ -552,7 +551,6 @@ feedPosts.addEventListener("keydown", e => {
   }
 });
 
-const TEACHERS_FILE = GITHUB_RAW_BASE + "teachers.txt";
 const BN_DIGITS = "০১২৩৪৫৬৭৮৯";
 function bnToEn(str){ return str.replace(/[০-৯]/g, d => BN_DIGITS.indexOf(d)); }
 
